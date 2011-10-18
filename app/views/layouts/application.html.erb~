@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%=title%></title>
+  <%= stylesheet_link_tag "blueprint/screen", :media => "screen"%>
+  <%= stylesheet_link_tag "bluprint/print", :media => "print"%>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class= "container">
+		<header>
+			<%=image_tag("akaruilabs logo.jpg", :alt => "Serendipity", :class => "round")%>
+			
+			<nav class= "round">
+				<ul>
+					<li><%= link_to "Home", '#'%> </li>
+					<li><%= link_to "Demo", "#"%> </li>
+					<li><%= link_to "Sign In", "#" %> </li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class= "round">
+			<%= yield %>
+		</section>
+	</div>
+</body>
+</html>
