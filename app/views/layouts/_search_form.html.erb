@@ -1,0 +1,4 @@
+<%= form_tag("/search", :method => "get") do %>
+  <%= text_field_tag(:q) %>
+  <%= link_to("Search", "#", :class => "search_button") %>
+<% end %>

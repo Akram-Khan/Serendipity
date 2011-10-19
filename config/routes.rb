@@ -1,9 +1,10 @@
 Serendipity::Application.routes.draw do
-#  get "pages/home"
 
-  get "pages/contact"
+  get "users/new"
 
-  get "pages/about"
+  match "/contact", 	:to => "pages#contact"
+  match "/about", 		:to => "pages#about"
+  match "/signup",		:to => "users#new"
 
   root :to => "pages#home"
 

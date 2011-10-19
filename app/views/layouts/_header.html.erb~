@@ -1,0 +1,10 @@
+<header>
+	<%logo =image_tag("akaruilabs logo.jpg", :alt => "Serendipity", :class => "round")%>
+	<%=link_to logo, root_path%>	
+	<nav class= "round">
+		<ul>
+			<li><%= link_to "Sign Up | ", "#"%> </li>
+			<li><%= link_to "Sign In", "#" %> </li>
+		</ul>
+	</nav>
+</header>

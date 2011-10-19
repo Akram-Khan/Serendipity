@@ -1,0 +1,8 @@
+<p>Placeholder for Home content</p>
+
+
+
+
+<%=link_to "Create Event", "#", :class => "create_event_button round"%>
+
+
